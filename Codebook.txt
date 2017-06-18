@@ -1,0 +1,69 @@
+Field	Description
+SubjectNum	Subject Number
+Activity	Activity description
+tBodyAcc-mean-X	Mean acceleration of the body in the X axis
+tBodyAcc-mean-Y	Mean acceleration of the body in the Y axis
+tBodyAcc-mean-Z	Mean acceleration of the body in the Z axis
+tBodyAcc-std-X	Standard Deviation of acceleration of the body in the X axis
+tBodyAcc-std-Y	Standard Deviation of acceleration of the body in the Y axis
+tBodyAcc-std-Z	Standard Deviation of acceleration of the body in the Z axis
+tGravityAcc-mean-X	Mean acceleration of the body due to gravity in the X axis
+tGravityAcc-mean-Y	Mean acceleration of the body due to gravity in the Y axis
+tGravityAcc-mean-Z	Mean acceleration of the body due to gravity in the Z axis
+tGravityAcc-std-X	Standard Deviation of acceleration of the body due to gravity in the X axis
+tGravityAcc-std-Y	Standard Deviation of acceleration of the body due to gravity in the Y axis
+tGravityAcc-std-Z	Standard Deviation of acceleration of the body due to gravity in the Z axis
+tBodyAccJerk-mean-X	Mean jerk acceleration of the body in the X axis
+tBodyAccJerk-mean-Y	Mean jerk acceleration of the body in the Y axis
+tBodyAccJerk-mean-Z	Mean jerk acceleration of the body in the Z axis
+tBodyAccJerk-std-X	Standard Deviation of jerk acceleration of the body in the X axis
+tBodyAccJerk-std-Y	Standard Deviation of jerk acceleration of the body in the Y axis
+tBodyAccJerk-std-Z	Standard Deviation of jerk acceleration of the body in the Z axis
+tBodyGyro-mean-X	Mean Gyro acceleration of the body in the X axis
+tBodyGyro-mean-Y	Mean Gyro acceleration of the body in the Y axis
+tBodyGyro-mean-Z	Mean Gyro acceleration of the body in the Z axis
+tBodyGyro-std-X	Standard Deviation of Gyro acceleration of the body in the X axis
+tBodyGyro-std-Y	Standard Deviation of Gyro acceleration of the body in the Y axis
+tBodyGyro-std-Z	Standard Deviation of Gyro acceleration of the body in the Z axis
+tBodyGyroJerk-mean-X	Mean Gyro acceleration of the body in the X axis
+tBodyGyroJerk-mean-Y	Mean Gyro acceleration of the body in the Y axis
+tBodyGyroJerk-mean-Z	Mean Gyro acceleration of the body in the Z axis
+tBodyGyroJerk-std-X	Standard Deviation of Gyro Jerk acceleration of the body in the X axis
+tBodyGyroJerk-std-Y	Standard Deviation of Gyro Jerk acceleration of the body in the Y axis
+tBodyGyroJerk-std-Z	Standard Deviation of Gyro Jerk acceleration of the body in the Z axis
+tBodyAccMag-mean	Mean acceleration of the body in the X axis
+tBodyAccMag-std	Mean acceleration of the body in the Y axis
+tGravityAccMag-mean	Mean acceleration of the body in the Z axis
+tGravityAccMag-std	Standard Deviation of acceleration of the body in the X axis
+tBodyAccJerkMag-mean	Standard Deviation of acceleration of the body in the Y axis
+tBodyAccJerkMag-std	Standard Deviation of acceleration of the body in the Z axis
+tBodyGyroMag-mean	Mean acceleration of the body due to gravity in the X axis
+tBodyGyroMag-std	Mean acceleration of the body due to gravity in the Y axis
+tBodyGyroJerkMag-mean	Mean acceleration of the body due to gravity in the Z axis
+tBodyGyroJerkMag-std	Standard Deviation of acceleration of the body due to gravity in the X axis
+fBodyAcc-mean-X	Standard Deviation of acceleration of the body due to gravity in the Y axis
+fBodyAcc-mean-Y	Standard Deviation of acceleration of the body due to gravity in the Z axis
+fBodyAcc-mean-Z	Mean jerk acceleration of the body in the X axis
+fBodyAcc-std-X	Mean jerk acceleration of the body in the Y axis
+fBodyAcc-std-Y	Mean jerk acceleration of the body in the Z axis
+fBodyAcc-std-Z	Standard Deviation of jerk acceleration of the body in the X axis
+fBodyAccJerk-mean-X	Standard Deviation of jerk acceleration of the body in the Y axis
+fBodyAccJerk-mean-Y	Standard Deviation of jerk acceleration of the body in the Z axis
+fBodyAccJerk-mean-Z	Mean Gyro acceleration of the body in the X axis
+fBodyAccJerk-std-X	Mean Gyro acceleration of the body in the Y axis
+fBodyAccJerk-std-Y	Mean Gyro acceleration of the body in the Z axis
+fBodyAccJerk-std-Z	Standard Deviation of Gyro acceleration of the body in the X axis
+fBodyGyro-mean-X	Standard Deviation of Gyro acceleration of the body in the Y axis
+fBodyGyro-mean-Y	Standard Deviation of Gyro acceleration of the body in the Z axis
+fBodyGyro-mean-Z	Mean Gyro acceleration of the body in the X axis
+fBodyGyro-std-X	Mean Gyro acceleration of the body in the Y axis
+fBodyGyro-std-Y	Mean Gyro acceleration of the body in the Z axis
+fBodyGyro-std-Z	Standard Deviation of Gyro Jerk acceleration of the body in the X axis
+fBodyAccMag-mean	Standard Deviation of Gyro Jerk acceleration of the body in the Y axis
+fBodyAccMag-std	Standard Deviation of Gyro Jerk acceleration of the body in the Z axis
+fBodyBodyAccJerkMag-mean	Mean Gyro acceleration of the body in the X axis
+fBodyBodyAccJerkMag-std	Mean Gyro acceleration of the body in the Y axis
+fBodyBodyGyroMag-mean	Mean Gyro acceleration of the body in the Z axis
+fBodyBodyGyroMag-std	Standard Deviation of Gyro Jerk acceleration of the body in the X axis
+fBodyBodyGyroJerkMag-mean	Standard Deviation of Gyro Jerk acceleration of the body in the Y axis
+fBodyBodyGyroJerkMag-std	Standard Deviation of Gyro Jerk acceleration of the body in the Z axis
