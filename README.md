@@ -2,7 +2,7 @@
 This is my submission for the final assignment in the third unit of Coursera Data Science course
 
 1. Provenance
-
+=============
 The data comes from:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
@@ -12,7 +12,7 @@ with a full description, of which an editied version is below, taken from:
 http://archive.ics.uci.edu/ml/machine-learning-databases/00240/UCI%20HAR%20Dataset.names
 
 2. Description
-
+==============
 Human Activity Recognition Using Smartphones Dataset
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets (test and training), where 70% of the volunteers was selected for generating the training data and 30% the test data. 
@@ -20,7 +20,6 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
 
 For each record it is provided:
-======================================
 
 - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
 - Triaxial Angular velocity from the gyroscope. 
@@ -29,7 +28,6 @@ For each record it is provided:
 - An identifier of the subject who carried out the experiment.
 
 The dataset includes the following files:
-=========================================
 
 - 'README.txt'
 
@@ -57,3 +55,16 @@ The following files are available for the train and test data. Their description
 
 - 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
 
+3. Approach to coding this in R
+===============================
+Load the packages I'll need later -  the only ones I needed were reshape2 and data.table
+
+Get the currentl location of the working directory, then bring the data across from the internet location, place it on the working directory and then unzip the data.
+
+From the data, bring in the activity labels and limit the input to mean and std dev of each variable.
+
+Bring in the training datasets, and then the test datasets
+
+Change the variable names and lookup the activity and subject labels
+
+Write the final table as a csv file.
