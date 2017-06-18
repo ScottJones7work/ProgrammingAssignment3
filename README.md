@@ -2,69 +2,69 @@
 This is my submission for the final assignment in the third unit of Coursera Data Science course
 
 1. Provenance
-=============
-The data comes from:
 
-https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+    The data comes from:
 
-with a full description, of which an editied version is below, taken from:
+    https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-http://archive.ics.uci.edu/ml/machine-learning-databases/00240/UCI%20HAR%20Dataset.names
+    with a full description, of which an editied version is below, taken from:
+
+    http://archive.ics.uci.edu/ml/machine-learning-databases/00240/UCI%20HAR%20Dataset.names
 
 2. Description
-==============
-Human Activity Recognition Using Smartphones Dataset
 
-The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets (test and training), where 70% of the volunteers was selected for generating the training data and 30% the test data. 
+    Human Activity Recognition Using Smartphones Dataset
 
-The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
+    The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets (test and training), where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
-For each record it is provided:
+    The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
 
-- Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
-- Triaxial Angular velocity from the gyroscope. 
-- A 561-feature vector with time and frequency domain variables. 
-- Its activity label. 
-- An identifier of the subject who carried out the experiment.
+    For each record it is provided:
 
-The dataset includes the following files:
+    - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
+    - Triaxial Angular velocity from the gyroscope. 
+    - A 561-feature vector with time and frequency domain variables. 
+    - Its activity label. 
+    - An identifier of the subject who carried out the experiment.
 
-- 'README.txt'
+    The dataset includes the following files:
 
-- 'features_info.txt': Shows information about the variables used on the feature vector.
+    - 'README.txt'
 
-- 'features.txt': List of all features.
+    - 'features_info.txt': Shows information about the variables used on the feature vector.
 
-- 'activity_labels.txt': Links the class labels with their activity name.
+    - 'features.txt': List of all features.
 
-- 'train/X_train.txt': Training set.
+    - 'activity_labels.txt': Links the class labels with their activity name.
 
-- 'train/y_train.txt': Training labels.
+    - 'train/X_train.txt': Training set.
 
-- 'test/X_test.txt': Test set.
+    - 'train/y_train.txt': Training labels.
 
-- 'test/y_test.txt': Test labels.
+    - 'test/X_test.txt': Test set.
 
-The following files are available for the train and test data. Their descriptions are equivalent. 
+    - 'test/y_test.txt': Test labels.
 
-- 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
+    The following files are available for the train and test data. Their descriptions are equivalent. 
 
-- 'train/Inertial Signals/total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis. 
+    - 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
 
-- 'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration. 
+    - 'train/Inertial Signals/total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis. 
 
-- 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
+    - 'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration. 
+
+    - 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
 
 3. Approach to coding this in R
-===============================
-Load the packages I'll need later -  the only ones I needed were reshape2 and data.table
 
-Get the currentl location of the working directory, then bring the data across from the internet location, place it on the working directory and then unzip the data.
+    Load the packages I'll need later -  the only ones I needed were reshape2 and data.table
 
-From the data, bring in the activity labels and limit the input to mean and std dev of each variable.
+    Get the currentl location of the working directory, then bring the data across from the internet location, place it on the working directory and then unzip the data.
 
-Bring in the training datasets, and then the test datasets
+    From the data, bring in the activity labels and limit the input to mean and std dev of each variable.
 
-Change the variable names and lookup the activity and subject labels
+    Bring in the training datasets, and then the test datasets
 
-Write the final table as a csv file.
+    Change the variable names and lookup the activity and subject labels
+
+    Write the final table as a csv file.
